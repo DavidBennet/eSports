@@ -7,7 +7,7 @@ CREATE TABLE "Ad" (
     "discord" TEXT NOT NULL,
     "weekDays" TEXT NOT NULL,
     "hourStart" INTEGER NOT NULL,
-    "HourEnd" INTEGER NOT NULL,
+    "hourEnd" INTEGER NOT NULL,
     "useVoiceChanel" BOOLEAN NOT NULL,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT "Ad_gameId_fkey" FOREIGN KEY ("gameId") REFERENCES "Game" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
